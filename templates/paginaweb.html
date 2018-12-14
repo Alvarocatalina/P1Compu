@@ -1,0 +1,133 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<body style="background-color:#F4D03F;">
+    <h2><p align=center>Noticia mas votada de <i>www.meneame.net</i><p><hr></h2>
+	<table border ="5" width="500" align= "center">
+ 		<tbody style="background: rgba(163, 228, 215, 0.8); border: 1px solid rgba(200, 100, 0, 0.3);">
+		  <tr>
+            <td bgcolor="##0A6647" align= "center" colspan=2>
+              <font color="#FFFFFF" face="arial, verdana, helvetica"> 
+                <b>Noticia más votada</b>
+              </font>
+            </td> 
+          </tr>
+          <tr><!--PRIMERA FILA-->
+				<td align="center" valign="top">
+					<b>Fecha:</b>
+				</td>
+				<td align="center" valign="top">
+					{{wfecha|safe}}
+				</td>
+			</tr>
+		</tbody>
+ 		<tbody style="background: rgba(163, 228, 215, 0.8); border: 1px solid rgba(200, 100, 0, 0.3);">
+			<tr><!--SEGUNDA FILA-->
+				<td align="center" valign="top">
+					<b>Hora:</b>
+				</td>
+				<td align="center" valign="top">
+					{{whora|safe}}
+				</td>
+			</tr>
+		</tbody>
+		<tbody style="background: rgba(163, 228, 215, 0.8); border: 1px solid rgba(200, 100, 0, 0.3);">
+			<tr><!--TERCERA FILA-->
+				<td align="center">		
+					<b>Titulo de la noticia:</b>
+				</td>
+				<td align="center">		
+					{{wtitulo|safe}}
+				</td>
+			</tr>
+		</tbody>
+		<tbody style="background: rgba(163, 228, 215, 0.8); border: 1px solid rgba(200, 100, 0, 0.3);">
+			<tr><!--CUARTA FILA-->
+				<td align="center">
+					<b>Meneos:</b>
+				</td>
+				<td align="center">
+					{{wmeneos|safe}}
+				</td>
+			</tr>
+		</tbody>
+		<tbody style="background: rgba(163, 228, 215, 0.8); border: 1px solid rgba(200, 100, 0, 0.3);">
+			<tr><!--QUINTA FILA-->
+				<td align="center">
+					<b>Clics:</b>
+				</td>
+				<td align="center">
+					{{wclics|safe}}
+				</td>
+			</tr>
+		</tbody>
+	</table>
+      
+	<p><p><table border ="4" width="500" align= "center">
+		<tbody style="background: rgba(163, 228, 215, 0.8); border: 1px solid rgba(163, 228, 215, 0.3);">
+			<tr>
+            	<td bgcolor="##0A6647" align= "center" colspan=2>
+              	<font color="#FFFFFF" face="arial, verdana, helvetica"  > 
+                	<b>Visualice las 10 noticias más recientes que superan un umbral</b>
+              	</font>
+            	</td> 
+          </tr>	
+          <form action="/umbral" method="POST">
+          <tr><!--SEXTA FILA-->
+				<td align="center">
+					<b>Introduzca el umbral deseado: </b>
+						<input type="text" size="5" name="wumbral" placeholder="  Umbral">                    
+                 </td>
+              	<td  align="center"> 
+						<input type="submit" name="text" value="Aceptar">
+                </td>
+			</tr>
+			</form>
+		</tbody>
+	</table>
+     
+      
+      <p align= "center"> {{wmerror|safe}}
+      <p>
+      <table border ="4" width="500" align= "center">
+		<tbody style="background: rgba(163, 228, 215, 0.8); border: 1px solid rgba(163, 228, 215, 0.3);">
+			<tr>
+            	<td bgcolor="##0A6647" align= "center" colspan=2>
+              	<font color="#FFFFFF" face="arial, verdana, helvetica"  > 
+                	<b>Visualice la media de clics de las bases de datos</b>
+              	</font>
+            	</td> 
+          </tr>	
+          <tr><!--SEXTA FILA-->
+				<td align="center">
+					<b>Media de clics de Mongo: </b>
+						{{wmmongo|safe}}                   
+                 </td>
+              	<td  align="center" rowspan="3"> 
+                   		<a href="/media" method="get"><button>Calcular</button></a>
+                </td>
+			</tr>
+          <tr><!--SEXTA FILA-->
+				<td align="center">
+					<b>Media de clics de Beebotte: </b>
+                  	{{wmbeebotte|safe}}                  
+                 </td>
+			</tr>
+		</tbody>
+	</table>
+ 
+ 	<p><table border ="0" align= "center">
+		<tbody style="background: rgba(200, 100, 0, 0.3); border: 1px solid rgba(163, 228, 215, 0.3);">
+			<tr><!--primera FILA-->
+				<td align="right">
+					<button>
+                      <b><a href="https://beebotte.com/dash/9ceb8d50-ef38-11e8-a140-675e8012aef3" target="_blank" style="text-decoration:none">Graficas externas</a></b>
+					</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+      
+	<p align=right>
+          <i>Práctica realizada por Álvaro Catalina</i>
+	</body>
+</html>
